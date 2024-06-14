@@ -13,6 +13,10 @@ const nextConfig = {
   env: {
     NEXT_PUBLIC_BASE_PATH: isProd ? `/${repoName}` : '',
   },
+  // i18n: {
+  //   locales: ['en', 'ja'],
+  //   defaultLocale: 'ja',
+  // },
 };
 
 export default nextConfig;

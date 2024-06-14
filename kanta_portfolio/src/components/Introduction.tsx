@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
-
 export default function Introduction() {
+
   const currentYear = new Date().getFullYear();
   const experiencedYears = currentYear - 2016;
   return (
