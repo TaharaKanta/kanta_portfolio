@@ -1,3 +1,4 @@
+import Friends from "@/components/Friends";
 import HeroSection from "@/components/HeroSection";
 import Products from "@/components/Products";
 import Skills from "@/components/Skills";
@@ -8,6 +9,7 @@ export default function Page() {
       <HeroSection />
       <Skills />
       <Products />
+      <Friends />
     </main>
   );
 }
