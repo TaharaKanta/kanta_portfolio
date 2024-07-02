@@ -1,10 +1,15 @@
+import useLocale from "@/hooks/useLocale";
+
 /* eslint-disable react/no-unescaped-entities */
 export default function Introduction() {
+  const { lan } = useLocale();
+  console.log(lan.introduction)
 
   const currentYear = new Date().getFullYear();
   const experiencedYears = currentYear - 2016;
   return (
     <div className="h-full border-2 m-2 p-2">
+      <h2>{lan.introduction}</h2>
       <h1 className="hero-title">Introduction</h1>
       <p>I am Kanta Tahara. I am a software engineer.</p>
       <p>I am a software engineer who loves to create things.</p>
