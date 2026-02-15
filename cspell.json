@@ -1,0 +1,20 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "useGitignore": true,
+  "ignorePaths": ["node_modules/**", ".next/**", "coverage/**", "package-lock.json"],
+  "words": [
+    "backtest",
+    "backtesting",
+    "codex",
+    "devserver",
+    "drawdown",
+    "kanta",
+    "logomark",
+    "mvp",
+    "oauth",
+    "tsx",
+    "vercel",
+    "vitest"
+  ]
+}

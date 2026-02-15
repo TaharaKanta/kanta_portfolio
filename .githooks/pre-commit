@@ -1,0 +1,8 @@
+#!/bin/sh
+set -eu
+
+if git diff --cached --name-only | grep -q '^docs/'; then
+  echo "[pre-commit] docs update detected. Running refactor..."
+  npm run refactor
+  git add -u
+fi

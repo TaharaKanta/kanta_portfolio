@@ -1,0 +1,4 @@
+interface:
+  display_name: "GitHub Issue/Project Reader"
+  short_description: "Read-only inspection for issue and project state"
+  default_prompt: "Use $github-project-issue-read to collect and summarize GitHub issue and project state for this repository."

@@ -5,8 +5,19 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "prepare": "git config core.hooksPath .githooks",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "lint:fix": "eslint --fix .",
+    "typecheck": "tsc --noEmit",
+    "check": "npm run typecheck && npm run lint",
+    "refactor": "npm run lint:fix && npm run format",
+    "spell": "cspell --no-progress --gitignore \"**/*.{ts,tsx,js,jsx,mjs,cjs,json,md}\"",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage"
   },
   "dependencies": {
     "next": "16.1.6",
@@ -14,12 +25,19 @@
     "react-dom": "19.2.3"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@vitest/coverage-v8": "^4.0.18",
     "babel-plugin-react-compiler": "1.0.0",
+    "cspell": "^9.6.4",
     "eslint": "^9",
     "eslint-config-next": "16.1.6",
-    "typescript": "^5"
+    "jsdom": "^28.0.0",
+    "prettier": "^3.8.1",
+    "typescript": "^5",
+    "vitest": "^4.0.18"
   }
 }

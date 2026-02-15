@@ -1,0 +1,4 @@
+interface:
+  display_name: "GitHub Issue/Project Manager"
+  short_description: "Create and update issue/project tracker artifacts"
+  default_prompt: "Use $github-project-issue-manage to add or update GitHub issues, milestones, labels, and project items."
