@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { FmpConnectivityChecker } from "./FmpConnectivityChecker";
 import styles from "./page.module.css";
 
@@ -22,6 +23,9 @@ export default function Home() {
           </p>
         </div>
         <FmpConnectivityChecker />
+        <p>
+          <Link href="/analysis">分析ページへ</Link>
+        </p>
         <div className={styles.ctas}>
           <a
             className={styles.primary}

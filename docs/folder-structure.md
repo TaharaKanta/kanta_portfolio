@@ -11,6 +11,7 @@ src/
   app/        # Next.js App Router
   features/   # 機能単位の UI/ロジック
   server/     # 外部API連携・サーバー専用処理
+    fmp/data/ # FMP 履歴データのファイルキャッシュ
   test/       # テスト共通セットアップ
 docs/         # 仕様・設計・運用ドキュメント
 public/       # 静的アセット

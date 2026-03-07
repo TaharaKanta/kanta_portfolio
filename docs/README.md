@@ -14,3 +14,5 @@
   `docs/folder-structure.md`
 - ファイル作成ルール:
   `docs/file-creation-rules.md`
+- GitHub Project/Issue 専用コマンド:
+  `docs/github-project-issue-command.md`

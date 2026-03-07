@@ -66,3 +66,23 @@ src/features/csv-button/CsvButton/
 ## 7. 補足
 
 - コンポーネントの責務分離ルールは `docs/frontend-architecture.md` を参照する。
+
+## 8. 型宣言ルール
+
+1. オブジェクト構造を表す型宣言は `type` ではなく `interface` を採用する。
+2. `interface` には必ず説明コメントを付ける。
+3. 説明コメントはオープンソースライブラリのように、利用者が責務を判断できる内容にする。
+
+### 8.1 記述例
+
+```ts
+/**
+ * FMP のシンボル検索結果を表す。
+ */
+export interface FmpSearchSymbolResult {
+  /** ティッカーシンボル (例: AAPL) */
+  symbol: string;
+  /** 企業名または銘柄名 */
+  name?: string;
+}
+```

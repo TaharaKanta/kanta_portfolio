@@ -4,3 +4,4 @@ out
 build
 coverage
 package-lock.json
+src/server/fmp/data/*.json
